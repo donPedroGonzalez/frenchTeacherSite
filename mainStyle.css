@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /*background-color: #161415;
+    min-height: 100vh;*/
+    padding-top: 20px; 
+}
+body {
+    background-color: #161415;    
+       
+}
+div {
+    background-color: #161415;
+}
+nav {
+    position: fixed;
+    background-color: #161415;
+    height: 20px;
+    width: 100vw;
+    margin-top: -20px;
+}
+.main-div {
+    height: 100vh;
+}
+#intro {
+    background-image: url(assets/myPic.jpg);    
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #161415;
+    /*clip-path: polygon(3% 3%, 100% 0, 100% 100%, 0% 100%);*/
+    
+}
