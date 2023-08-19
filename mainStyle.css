@@ -6,7 +6,6 @@
 html {
     /*background-color: #161415;
     min-height: 100vh;*/
-    padding-top: 20px; 
 }
 body {
     background-color: #161415;    
@@ -15,12 +14,18 @@ body {
 div {
     background-color: #161415;
 }
-nav {
+/*nav {
     position: fixed;
     background-color: #161415;
     height: 20px;
     width: 100vw;
     margin-top: -20px;
+}*/
+.nav-el {
+    margin-right: 20px;
+}
+.bg-my {
+    background-color: #161415;
 }
 .main-div {
     height: 100vh;
@@ -29,8 +34,9 @@ nav {
     background-image: url(assets/myPic.jpg);    
     background-size: contain;  
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;    
+    background-position-y: top;
+    background-position-x: left;
     background-color: #161415;
-    /*clip-path: polygon(3% 3%, 100% 0, 100% 100%, 0% 100%);*/
-    
+    /*clip-path: polygon(3% 3%, 100% 0, 100% 100%, 0% 100%);*/    
 }
