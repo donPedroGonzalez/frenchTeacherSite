@@ -74,7 +74,7 @@ h3 {
     display: flex;
     min-height: 100vh;
 }
-.text-div {    
+.text-div {        
     flex-direction: column;
 }
 .parText p {
@@ -125,7 +125,17 @@ h3 {
     align-items: center;
 }
 .following {
-    padding-top: 25px;
+    display: flex;
+    margin-top: 4rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.following h1 {
+    margin-left: 1rem;
+}
+.text-div:nth-of-type(odd){
+    background-color: rgba(54, 54, 54, 0.251);
+    border-radius: 25px;
 }
 #intro {
     background-image: url(assets/myPic.jpg);    
@@ -153,8 +163,8 @@ h3 {
     background-repeat: no-repeat;
     background-attachment: local;    
     background-position-y: top;
-    background-position-x: left;
-    width: 500px;
+    background-position-x: left;    
+    width: 600px;
     height: 100vh;
     display: flex;
 }
