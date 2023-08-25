@@ -19,6 +19,17 @@ window.addEventListener('scroll', () => {
 
     prevScrollPos = currentScrollPos;
 });
+
+let test = document.getElementById('test');
+let mousePos = { x: undefined, y: undefined };
+window.addEventListener('mousemove', (event) => {
+    const currentScrollPos2 = window.pageYOffset;
+    mousePos = { x: event.clientX, y: event.clientY };
+    test.textContent = `${mousePos.x} ${mousePos.y}`;
+    if (event.clientY < 50) { 
+        navbar.style.top = "0";
+    }
+})
 /*
 navbar.addEventListener("mouseover", () => { 
     console.log("mouseover");
