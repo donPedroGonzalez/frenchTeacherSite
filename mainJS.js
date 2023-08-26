@@ -10,17 +10,20 @@ toggleButton.addEventListener('click', () => {
 });
 window.addEventListener('scroll', () => { 
     const currentScrollPos = window.pageYOffset;
-
     if (prevScrollPos < currentScrollPos) { 
         navbar.style.top = `-${navbar.offsetHeight}px`;
     } else if (currentScrollPos == initialScrollPos) {
         navbar.style.top = "0";
     }
-
     prevScrollPos = currentScrollPos;
 });
 window.addEventListener('mousemove', (event) => {
     if (event.clientY < 50) { 
+        navbar.style.top = "0";
+        console.log('mousemove <50 activated');
+    } else if (window.pageYOffset > 50) {
+        navbar.style.top = `-${navbar.offsetHeight}px`;
+    } else if (window.pageYOffset < 50) {
         navbar.style.top = "0";
     }
 })

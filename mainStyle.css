@@ -113,16 +113,19 @@ h3 {
 }
 .parText p {
     padding: 0rem 2rem;
+    line-height: 1.5rem;
     text-align: justify;
+    font-size: larger;
 }
 .parText table {
     margin-top: 3rem;
     table-layout: fixed;
     width: 90%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
+    font-size: larger;
     background-color: #312f2fbd;
-    background-image: linear-gradient(to right, #4f4f4fbd, #332f2fbd, #4f4f4fbd)
+    background-image: linear-gradient(to right, #4f4f4fbd, #242121bd, #4f4f4fbd)
 }
 .parText table, th, td {
     border: 1px solid;
