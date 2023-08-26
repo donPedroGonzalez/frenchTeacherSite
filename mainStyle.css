@@ -119,6 +119,7 @@ h3 {
 }
 .parText table {
     margin-top: 3rem;
+    margin-bottom: 3rem;
     table-layout: fixed;
     width: 90%;
     margin-left: auto;
