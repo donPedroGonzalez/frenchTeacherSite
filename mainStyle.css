@@ -52,6 +52,33 @@ h3 {
     padding: 0;
     font-weight: 100;
 }
+.cl-intro {
+    justify-content: center;
+    align-items: center;
+}
+.following {
+    display: flex;
+    margin-top: 4rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.following h1 {
+    margin-left: 1rem;
+}
+.intro-header {    
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.intro-subtitle {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.main-div {
+    display: flex;
+    min-height: 100vh;
+}
 .navbar { 
     position: fixed;
     width: 100%;
@@ -61,26 +88,6 @@ h3 {
     align-items: center;
     background-color: rgba(2, 0, 1, 0.7); 
     transition: top 0.3s ease;
-}
-.site-title {
-    font-size: 1.5rem;
-    margin-right: auto;
-    padding: 0.5rem;
-}
-.site-title a {
-    text-decoration: none;
-    color: white;
-}
-.main-div {
-    display: flex;
-    min-height: 100vh;
-}
-.text-div {        
-    flex-direction: column;
-}
-.parText p {
-    padding: 0rem 2rem;
-    text-align: justify;
 }
 .navbar-links {    
     margin-left: auto;
@@ -104,6 +111,40 @@ h3 {
     padding: 1rem;
     display: block;
 }
+.parText p {
+    padding: 0rem 2rem;
+    text-align: justify;
+}
+.parText table {
+    margin-top: 3rem;
+    table-layout: fixed;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #312f2fbd;
+    background-image: linear-gradient(to right, #4f4f4fbd, #332f2fbd, #4f4f4fbd)
+}
+.parText table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+.site-title {
+    font-size: 1.5rem;
+    margin-right: auto;
+    padding: 0.5rem;
+}
+.site-title a {
+    text-decoration: none;
+    color: white;
+}
+.text-div {        
+    flex-direction: column;
+}
+.text-div:nth-of-type(odd){
+    background-color: rgba(54, 54, 54, 0.251);
+    border-radius: 25px;
+}
 .toggle-button {
     margin-right: auto;
     position: absolute;
@@ -121,33 +162,7 @@ h3 {
     background-color: white;
     border-radius: 10px;
 }
-.cl-intro {
-    justify-content: center;
-    align-items: center;
-}
-.following {
-    display: flex;
-    margin-top: 4rem;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.following h1 {
-    margin-left: 1rem;
-}
-.text-div:nth-of-type(odd){
-    background-color: rgba(54, 54, 54, 0.251);
-    border-radius: 25px;
-}
-.intro-header {    
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-}
-.intro-subtitle {
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-}
+
 #intro {
     background-image: url(assets/myPic.jpg);    
     background-size: contain;      
