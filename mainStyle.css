@@ -191,7 +191,7 @@ h3 {
 #myImage {
     background-image: url(assets/myPic.jpg);    
     background-size: cover;      
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
     background-attachment: local;    
     background-position-y: top;
     background-position-x: left;    
