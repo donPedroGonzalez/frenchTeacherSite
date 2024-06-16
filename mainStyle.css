@@ -166,6 +166,9 @@ h3 {
     background-color: white;
     border-radius: 10px;
 }
+.p-testimony {
+    font-style: italic;
+}
 
 #intro {
     background-image: url(assets/myPic.jpg);    
