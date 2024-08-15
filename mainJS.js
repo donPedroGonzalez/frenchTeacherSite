@@ -12,6 +12,7 @@ window.addEventListener('scroll', () => {
     const currentScrollPos = window.pageYOffset;
     if (prevScrollPos < currentScrollPos) { 
         navbar.style.top = `-${navbar.offsetHeight}px`;
+        navbarLinks.classList.remove('active');
     } else if (currentScrollPos == initialScrollPos) {
         navbar.style.top = "0";
     }
